@@ -1,0 +1,15 @@
+Issue: Add Javadoc comments to the Fibonacci class
+
+Description:
+The Fibonacci class currently lacks proper Javadoc comments. As per the project manager's request, we need to update the class to include Javadoc comments that provide clear and concise documentation for the methods. This will improve code readability and maintainability.
+
+Action Items:
+
+1. Update the fibonacci method to include Javadoc comments describing its purpose, parameters, and return value.
+2. Ensure that the Javadoc comments follow the standard conventions for documenting Java code.
+3. Verify that the Javadoc comments accurately reflect the functionality of the method and provide useful information for developers.
+
+Once this modification is implemented, the Fibonacci class will have improved documentation and meet the project requirements.
+
+Assigned To: Andrew Goodman
+Priority: Medium
