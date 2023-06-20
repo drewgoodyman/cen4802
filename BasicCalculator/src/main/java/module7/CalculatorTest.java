@@ -1,4 +1,4 @@
-package com.example;
+package module7;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -36,7 +36,9 @@ public class CalculatorTest {
     @Test
     public void testDivideByZero() {
         Calculator calculator = new Calculator();
-        Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            calculator.divide(10, 0);
+        });
     }
 
     @Test
@@ -56,7 +58,9 @@ public class CalculatorTest {
     @Test
     public void testNegativeExponent() {
         Calculator calculator = new Calculator();
-        Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.power(2, -3));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            calculator.power(2, -3);
+        });
     }
 }
 

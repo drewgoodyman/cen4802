@@ -1,4 +1,4 @@
-package com.example;
+package module7;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     /**
-     * Subtrackts two numbers.
+     * Subtracts two numbers.
      * @param a The number that is subtracted from.
      * @param b The number to subtract.
      * @return The differences tween the two numbers.
@@ -40,7 +40,7 @@ public class Calculator {
      * Divides one number by another number.
      * @param a The Dividend.
      * @param b The divisor.
-     * @return The divison result as a double.
+     * @return The division result as a double.
      * @throws IllegalArgumentException if the divisor is a zero.
      */
     public double divide(int a, int b) {
@@ -110,14 +110,29 @@ public class Calculator {
             boolean exit = false;
 
             switch (choice) {
-                case 1 -> result = calculator.add(num1, num2);
-                case 2 -> result = calculator.subtract(num1, num2);
-                case 3 -> result = calculator.multiply(num1, num2);
-                case 4 -> result = calculator.divide(num1, num2);
-                case 5 -> result = calculator.square(num1);
-                case 6 -> result = calculator.power(num1, num2);
-                case 0 -> exit = true;
-                default -> System.out.println("Invalid choice. Please try again.");
+                case 1:
+                    result = calculator.add(num1, num2);
+                    break;
+                case 2:
+                    result = calculator.subtract(num1, num2);
+                    break;
+                case 3:
+                    result = calculator.multiply(num1, num2);
+                    break;
+                case 4:
+                    result = calculator.divide(num1, num2);
+                    break;
+                case 5:
+                    result = calculator.square(num1);
+                    break;
+                case 6:
+                    result = calculator.power(num1, num2);
+                    break;
+                case 0:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
             }
 
             if (!exit) {
